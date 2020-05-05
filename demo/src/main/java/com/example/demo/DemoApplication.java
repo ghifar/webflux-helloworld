@@ -18,7 +18,7 @@ public class DemoApplication {
 @RestController
 class testing{
 
-	@GetMapping("/")
+	@GetMapping("/oke")
 	public ResponseEntity<?> controller1(){
 
 		return ResponseEntity.ok("<h1>Helloworld BERUBAH</h1>");
