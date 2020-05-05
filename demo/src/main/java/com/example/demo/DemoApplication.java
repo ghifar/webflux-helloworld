@@ -21,6 +21,6 @@ class testing{
 	@GetMapping("/")
 	public ResponseEntity<?> controller1(){
 
-		return ResponseEntity.ok("<h1>Helloworld new push!!</h1>");
+		return ResponseEntity.ok("<h1>Helloworld</h1>");
 	}
 }
