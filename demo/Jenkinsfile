@@ -1,0 +1,15 @@
+pipeline {
+   agent any
+   stages {
+       stage('maven') {
+         steps {
+          sh 'mvn clean install'
+        }
+       }
+      stage('Build image') {
+         steps {
+          sh 'demo/docker-compose up --build'
+        }
+      }
+   }
+}
